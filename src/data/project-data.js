@@ -1,15 +1,16 @@
+const lastProject = {
+    name: 'Set',
+    technologies: ['TypeScript', 'React', 'SASS'],
+    description: 'My online version of the SET card game, following the original logic & timed, with cards dynamically generated from a predefined set of symbols. The older version available here',
+    demo: 'https://ann-kar.github.io/set/',
+    code: 'https://github.com/ann-kar/set',
+    label: 'last project'
+}
+
 const projects = [
     {
-        name: 'Set',
-        technologies: ['TypeScript', 'React', 'SASS'],
-        description: 'My online version of the SET card game, following the original logic & timed, with cards dynamically generated from a predefined set of symbols. The older version available here',
-        demo: 'https://ann-kar.github.io/set/',
-        code: 'https://github.com/ann-kar/set',
-        label: 'last project'
-    },
-    {
         name: 'Shift planner',
-        technologies: ['Express.js', 'EJS', 'PostgreSQL', 'Bootstrap'],
+        technologies: ['Node.js (Express)', 'EJS', 'PostgreSQL', 'Bootstrap'],
         description: 'A coffeeshop employee scheduling app built with Node.js as an exercise in server-side JS, fetching from the database, and data presentation (calendar on the homepage).',
         demo: null,
         code: 'https://github.com/ann-kar/shift-planner',
@@ -33,4 +34,4 @@ const projects = [
     },
 ];
 
-export default projects;
+export {lastProject, projects};
