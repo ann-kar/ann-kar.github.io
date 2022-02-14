@@ -1,8 +1,7 @@
 import React from 'react';
-import { Grid, Container } from '@mui/material';
+import { Grid } from '@mui/material';
 
-import Project from "../components/Project";
-import LastProject from "../components/LastProject";
+import { Project, LastProject } from "../components";
 import { projects } from '../data/project-data';
 
 const Projects = () => {
@@ -10,7 +9,7 @@ const Projects = () => {
     const renderProjects = () => {
         return projects.map(project => {
             return (
-                <Grid item xs={4}>
+                <Grid item xs={12} sm={10} md={6} lg={4}>
                     <Project data={project} />
                 </Grid>
             )
@@ -18,14 +17,12 @@ const Projects = () => {
     };
 
     return (
-        <Container maxwidth="80%">
-            <Grid container spacing={3}>
-                <Grid item xs={12}>
-                    <LastProject />
-                </Grid>
-                {renderProjects()}
+        <Grid container sx={{ justifyContent: 'center' }} spacing={3}>
+            <Grid item xs={12} sm={10} md={6} lg={12}>
+                <LastProject />
             </Grid>
-        </Container>
+            {renderProjects()}
+        </Grid>
     );
 }
 

@@ -10,27 +10,20 @@ import { lastProject } from '../data/project-data';
 
 const LastProject = ({ name, ...props }) => {
     return (
-
-            <Card sx={{display: 'flex', p: 0}}>
-                <Project data={lastProject} />
-                <Card sx={{minWidth: 420, p:0, borderRadius: 0,}}>
-                    <CardActionArea href="https://ann-kar.github.io/set/">
-                        <CardMedia
-                     
-                            sx={{ minWidth: 310 }}
-                            component="img"
-                            height="350"
-                            image={setDesktop}
-                            alt="set screenshot"
-
-                        />
-                    </CardActionArea>
-                </Card>
+        <Card sx={{ display: 'flex', p: 0 }}>
+            <Project data={lastProject} />
+            <Card sx={{ display: {xs: 'none', lg: 'flex'}, minWidth: 420, p: 0, borderRadius: 0 }}>
+                <CardActionArea href="https://ann-kar.github.io/set/" >
+                    <CardMedia
+                        sx={{ display: {xs: 'none', lg: 'inline-block' }, height: 360}}
+                        style={{margin:0, padding:0}}
+                        component="img"
+                        image={setDesktop}
+                        alt="set screenshot"
+                    />
+                </CardActionArea>
             </Card>
-
-
-
-
+        </Card>
     )
 }
 

@@ -1,29 +1,29 @@
 import React from 'react';
-import { Typography, Box, Stack, Divider, ListItem, Chip } from '@mui/material';
-import { Button, Card, CardHeader, CardContent, CardActionArea, CardActions } from '@mui/material';
+import { Box, Chip, Container, Typography } from '@mui/material';
+import { Button, Card, CardContent, CardHeader } from '@mui/material';
 
-const Project = ({ name, data, ...props }) => {
+const Project = ({ data }) => {
     return (
-        <Card sx={{ minHeight: 350 }}>
+        <Card sx={{ minWidth: 270, p: 0, maxHeight: { md: '100%' } }}>
             <CardHeader
                 sx={{ ml: 1, pb: 0, pl: 2 }}
                 title={data.name}
                 component="h2"
                 titleTypographyProps={{ variant: "h2" }} />
             <CardContent sx={{ pt: 1 }}>
-
-                    <Box sx={{ my: 1, display: 'flex', flexWrap: 'wrap' }}>
-                        {(data.technologies).map(tech => (
-                            <Chip label={tech} />
-                        ))}
-                    </Box>
-               
+                <Box sx={{ my: 1, display: 'flex', flexWrap: 'wrap' }}>
+                    {(data.technologies).map(tech => (
+                        <Chip label={tech} />
+                    ))}
+                </Box>
                 <Typography component="p" variant="body" color="text.secondary" sx={{ my: 2, mx: 1 }}>
                     {data.description}
                 </Typography>
             </CardContent>
-            {data.demo && <Button variant="contained" color="warning" href={data.demo}>DEMO</Button>}
-            {data.code && <Button variant="contained" color="warning" href={data.code}>CODE</Button>}
+            <Container sx={{ display: 'flex', px: 2, justifyContent: { xs: 'center', md: 'flex-start' } }}>
+                {data.demo && <Button variant="contained" color="secondary" href={data.demo}>DEMO</Button>}
+                {data.code && <Button variant="contained" color="secondary" href={data.code}>CODE</Button>}
+            </Container>
         </Card>
     )
 }
