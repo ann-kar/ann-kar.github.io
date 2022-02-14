@@ -3,27 +3,23 @@ import List from "@mui/material/List";
 import ListItem from '@mui/material/ListItem';
 import Divider from '@mui/material/Divider';
 import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
 
 const HeaderList = () => {
+
     return (
-        <Typography variant="h6">
+        <Typography variant="body">
             <List style={{ display: 'flex', justify: 'flex-start', flexDirection: 'row', padding: 0 }}>
-                <ListItem style={{ width: 'initial' }} sx={{ px: 1 }}>Front-end dev:</ListItem>
-                <ListItem style={{ width: 'initial' }}>TypeScript</ListItem>
-                <Divider orientation="vertical" flexItem />
-                <ListItem style={{ width: 'initial' }}>React</ListItem>
-                <Divider orientation="vertical" flexItem />
-                <ListItem style={{ width: 'initial' }}>Express.js</ListItem>
-                <Divider orientation="vertical" flexItem />
-                <ListItem style={{ width: 'initial' }}>PostgreSQL</ListItem>
-                <Divider orientation="vertical" flexItem />
-                <ListItem style={{ width: 'initial' }}>Material UI</ListItem>
-                <Divider orientation="vertical" flexItem />
-                <ListItem style={{ width: 'initial' }}>SASS</ListItem>
-                <Divider orientation="vertical" flexItem />
-                <ListItem style={{ width: 'initial' }}>Bootstrap</ListItem>
-                <Divider orientation="vertical" flexItem />
-                <ListItem style={{ width: 'initial' }} button={true}>see more</ListItem>
+                <ListItem sx={{ pl: 1, pr: 1, width: 'initial' }}>
+                    <Typography component="span" sx={{ display: { xs: 'none', sm: 'inline' } }}>Front-end dev with&nbsp;</Typography> TypeScript and React</ListItem>
+                <Divider flexItem />
+                <ListItem sx={{ px: 1 }} style={{ width: 'initial' }}>
+                    <Link color="inherit" underline="none" href="#skillSection">more skills</Link>
+                </ListItem >
+                <Divider flexItem />
+                <ListItem style={{ width: 'initial' }}>
+                    <Link color="inherit" underline="none" href="#aboutSection">about me</Link>
+                </ListItem >
             </List>
         </Typography>
     )
