@@ -4,7 +4,7 @@ import { Button, Card, CardContent, CardHeader } from '@mui/material';
 
 const Project = ({ data }) => {
     return (
-        <Card sx={{ minWidth: 270, p: 0, maxHeight: { md: '100%' } }}>
+        <Card sx={{ minWidth: 270, p: 0, display: 'flex', flexWrap: 'wrap', minHeight: {xs: 0, md: '23.5rem', lg: 'unset' }}}>
             <CardHeader
                 sx={{ ml: 1, pb: 0, pl: 2 }}
                 title={data.name}
@@ -16,11 +16,12 @@ const Project = ({ data }) => {
                         <Chip label={tech} />
                     ))}
                 </Box>
-                <Typography component="p" variant="body" color="text.secondary" sx={{ my: 2, mx: 1 }}>
+                <Typography component="p" variant="body" color="text.secondary"
+                sx={{ my: 2, mx: 1 }}>
                     {data.description}
                 </Typography>
             </CardContent>
-            <Container sx={{ display: 'flex', px: 2, justifyContent: { xs: 'center', md: 'flex-start' } }}>
+            <Container sx={{ alignSelf: 'flex-end', display: 'flex', px: 2, justifyContent: { xs: 'center', md: 'flex-start' } }}>
                 {data.demo && <Button variant="contained" color="secondary" href={data.demo}>DEMO</Button>}
                 {data.code && <Button variant="contained" color="secondary" href={data.code}>CODE</Button>}
             </Container>

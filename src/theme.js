@@ -6,12 +6,13 @@ let theme = createTheme({
         'sm': 600,
         'md': 768,
         'lg': 1050,
+        'xlg': 1300
     },
     palette: {
         type: 'light',
         primary: {
             main: 'rgb(255, 155, 155, 0.3)',
-            light: '#61dafb',
+            light: 'rgba(255, 155, 155,0.7)',
             dark: '#fff',
         },
         secondary: {
@@ -90,7 +91,7 @@ theme = createTheme(theme, {
         MuiCardHeader: {
             styleOverrides: {
                 root: {
-                    color: amber[600],
+                    color: amber[400],
                     margin: theme.spacing(0),
                 },
             }
