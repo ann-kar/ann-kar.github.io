@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from '@mui/system/styled';
 import { Container } from '@mui/material';
- 
-import { About, Footer, Header, Message, Projects, Skills } from "../components";
+
+import { About, Header, Message, Projects, Skills } from "../components";
 
 const MainWrapper = styled('main')(({ theme }) => ({
   background: 'transparent',
@@ -22,7 +22,6 @@ const Main = () => {
         <Skills />
       </Container>
       <About />
-      <Footer/>
     </MainWrapper>
   )
 }
