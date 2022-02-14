@@ -1,10 +1,11 @@
 import * as React from 'react'
 
-import {Main} from './components';
+import {Main, Background} from './components';
 
 function App() {
   return (
     <div className="App">
+      <Background/>
       <Main />
     </div>
   );

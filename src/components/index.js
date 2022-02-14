@@ -10,4 +10,4 @@ import Projects from '../components/Projects';
 import Skills from '../components/Skills';
 import SkillSet from './SkillSet';
 
-export {About, Background, Footer, Header, HeaderList, LastProject, Main, Message, Project, Projects, Skills, SkillSet}
+export {About, Background, Header, HeaderList, LastProject, Main, Message, Project, Projects, Skills, SkillSet}

@@ -2,17 +2,22 @@ import { createTheme } from '@mui/material/styles';
 import { amber, grey } from '@mui/material/colors';
 
 let theme = createTheme({
+    breakpoints: {
+        'sm': 600,
+        'md': 768,
+        'lg': 1050,
+    },
     palette: {
         type: 'light',
         primary: {
-            main: '#05f953',
+            main: 'rgb(255, 155, 155, 0.3)',
             light: '#61dafb',
-            dark: '#21a1c4',
+            dark: '#fff',
         },
         secondary: {
-            main: amber[400],
-            light: amber[100],
-            dark: amber[700],
+            main: amber[100],
+            light: amber[50],
+            dark: amber[600],
         },
         error: {
             main: '#404040',
@@ -26,14 +31,13 @@ let theme = createTheme({
             grey500: grey[700],
             grey600: grey[900],
         },
-
     },
     spacing: [0, 8, 16, 32, 64, 128],
     typography: {
         fontFamily: 'Lato',
         h1: {
-            fontSize: '7.5rem',
-            fontWeight: 700,
+            fontSize: '5.5rem',
+            fontWeight: 600,
             letterSpacing: 1.5
         },
         h2: {
@@ -51,7 +55,7 @@ let theme = createTheme({
         },
         h6: {
             fontSize: '1.2rem',
-            fontWeight: 300,
+            fontWeight: 500,
         },
         body: {
             fontSize: '1rem',
@@ -65,17 +69,19 @@ theme = createTheme(theme, {
         MuiButton: {
             styleOverrides: {
                 root: {
-                    marginLeft: theme.spacing(2),
-                    marginBottom: theme.spacing(2)
+                    marginLeft: theme.spacing(1),
+                    marginRight: theme.spacing(1),
+                    marginBottom: theme.spacing(3)
                 }
             }
         },
         MuiCard: {
             defaultProps: {
-                elevation: 3
+                elevation: 0
             },
             styleOverrides: {
                 root: {
+                    borderRadius: 25,
                     padding: theme.spacing(1),
                     margin: theme.spacing(0),
                 },
@@ -84,7 +90,7 @@ theme = createTheme(theme, {
         MuiCardHeader: {
             styleOverrides: {
                 root: {
-                    color: theme.palette.warning.main,
+                    color: amber[600],
                     margin: theme.spacing(0),
                 },
             }
@@ -92,9 +98,9 @@ theme = createTheme(theme, {
         MuiCardMedia: {
             styleOverrides: {
                 root: {
-                    filter: 'grayscale(80%)',
+                    filter: 'grayscale(100%) brightness(1.15)',
                     "&:hover": {
-                        filter: 'none'
+                        filter: 'brightness(1.15)'
                     },
 
                 }
@@ -124,10 +130,50 @@ theme = createTheme(theme, {
                 }
             }
         },
+        MuiContainer: {
+            defaultProps: {
+                root: {
+                    [theme.breakpoints.down('md')]: {
+                        maxwidth: '100%',
+                    },
+                    [theme.breakpoints.up('md')]: {
+                        maxwidth: '80%',
+                    }
+                }
+            }
+
+        },
+        MuiDivider: {
+            defaultProps: {
+                orientation: 'vertical',
+                variant: 'middle'
+            },
+            styleOverrides: {
+                root: {
+                    borderColor: '#fff',
+                    opacity: 0.9
+                }
+            }
+        },
+        MuiLink: {
+            defaultProps: {
+                color: 'inherit'
+            }
+        },
         MuiList: {
             styleOverrides: {
                 root: {
-                    color: theme.palette.greys.grey400,
+                    color: theme.palette.greys.grey500,
+                    color: "#fff"
+                }
+            }
+        },
+        MuiStack: {
+            styleOverrides: {
+                root: {
+                    "&.MuiBox-root": {
+                        marginBottom: 0,
+                    }
                 }
             }
         }
