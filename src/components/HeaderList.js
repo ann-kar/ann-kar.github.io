@@ -11,14 +11,14 @@ const HeaderList = () => {
         <Typography variant="body">
             <List style={{ display: 'flex', justify: 'flex-start', flexDirection: 'row', padding: 0 }}>
                 <ListItem sx={{ pl: 1, pr: 1, width: 'initial' }}>
-                    <Typography component="span" sx={{ display: { xs: 'none', sm: 'inline' } }}>Front-end dev with&nbsp;</Typography> TypeScript and React</ListItem>
+                     Front-end dev <Typography component="span" sx={{ display: { xs: 'none', sm: 'inline' } }}>&nbsp;with TypeScript and React</Typography></ListItem>
                 <Divider flexItem />
                 <ListItem sx={{ px: 1 }} style={{ width: 'initial' }}>
-                    <Link color="inherit" underline="none" href="#skillSection">more skills</Link>
+                    <Link color="inherit" underline="none" href="#skillSection">skills</Link>
                 </ListItem >
                 <Divider flexItem />
                 <ListItem style={{ width: 'initial' }}>
-                    <Link color="inherit" underline="none" href="#aboutSection">about me</Link>
+                    <Link color="inherit" underline="none" href="#aboutSection">about</Link>
                 </ListItem >
             </List>
         </Typography>
