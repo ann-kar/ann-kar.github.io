@@ -1,7 +1,7 @@
 const lastProject = {
     name: 'Set',
-    technologies: ['TypeScript', 'React', 'SASS'],
-    description: 'My online version of the SET card game, following the original logic & timed, with cards dynamically generated from a predefined set of symbols. The older version available here',
+    technologies: ['TypeScript', 'React', 'SASS', 'SVG'],
+    description: 'My online version of the SET card game, following the original logic & timed, with cards dynamically generated from a predefined set of symbols.',
     demo: 'https://ann-kar.github.io/set/',
     code: 'https://github.com/ann-kar/set',
     label: 'last project'
@@ -11,7 +11,7 @@ const projects = [
     {
         name: 'Shift planner',
         technologies: ['Node.js (Express)', 'EJS', 'PostgreSQL', 'Bootstrap'],
-        description: 'A coffeeshop employee scheduling app built with Node.js as an exercise in server-side JS, fetching from the database, and data presentation (calendar on the homepage).',
+        description: 'An employee scheduling app built with Node.js as an exercise in server-side JS, fetching from the database, and data presentation (calendar on the homepage).',
         demo: null,
         code: 'https://github.com/ann-kar/shift-planner',
         label: 'recent project'
@@ -27,7 +27,7 @@ const projects = [
     {
         name: 'Accordion FAQ',
         technologies: ['TypeScript', 'React', 'styled-components'],
-        description: 'A coffeeshop employee scheduling app built with Node.js as an exercise in server-side JS, fetching from the database, and data presentation (calendar on the homepage).',
+        description: 'A small project intended as an exercise in styled-components and TypeScript, based on a Figma design. A responsive landing page displaying FAQ and an SVG graphic.',
         demo: 'https://ann-kar.github.io/accordion-faq/',
         code: 'https://github.com/ann-kar/accordion-faq/',
         label: 'small project'
