@@ -1,6 +1,7 @@
 import React from 'react';
 import { Container, Link, Typography } from '@mui/material';
 import styled from '@mui/system/styled';
+
 import svg from '../data/noise.svg';
 
 const AboutWrapper = styled('div')(({ theme }) => ({
@@ -20,21 +21,22 @@ const About = () => {
                 <Typography sx={{ m: 0, mt: 3, py: 3, pl: { xs: 2, md: 3, lg: 4 }, pr: { xs: 1, md: 2 } }} variant="h5" textAlign="right">
                     <p>
                         Hi!
-                        I'm, you can say, an <span style={{ fontStyle: 'italic' }}>aspiring</span> front-end developer -
-                        which means that I've started to code a good year ago, realized it was even more fun than expected,
-                        and decided to turn my career around. As of now (Feb 2022), I'm looking for my first job or internship.
+                        I am what you might call an "aspiring" coder.
+                        I've started to code a good year ago, realized it was even more fun than expected,
+                        and decided to turn my career around. As of now (Feb 2022), I'm looking for my first job or internship
+                        as a front-end developer.
                     </p>
                     <p>
-                        My education includes courses focused on web development with JavaScript and Node.js
+                        My education includes courses focused on JavaScript and Node.js
                         (<Link href="https://www.incopolska.org/incode">INCODE</Link>)
-                        or React (<Link href="https://szkolareacta.pl/zapisy/">React School</Link> (PL))
+                        or React.js (<Link href="https://szkolareacta.pl/zapisy/">React School</Link> (PL))
                         and countless hours spent tinkering with my own projects.
                     </p>
                     <p>
                         I'm currently participating in <Link href="https://challenges.dareit.io/">Dare IT: Portfolio Challenge</Link> programme and eagerly learning TypeScript.<br />
                     </p>
                     <p>
-                        Coding would not be my first job - up till now, I've worked as a Polish translator with English
+                        Web development will be a new path in my career life - up till now, I've worked as a Polish translator with English
                         and Japanese. A list of my literary translations is available <Link href="https://www.goodreads.com/author/show/17193907.Anna_Karpiuk?from_search=true&from_srp=true">here</Link>.
                     </p>
                     <p>
