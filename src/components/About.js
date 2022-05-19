@@ -23,8 +23,15 @@ const About = () => {
                         Hi!
                         I am what you might call an "aspiring" coder.
                         I've started to code a good year ago, realized it was even more fun than expected,
-                        and decided to turn my career around. As of now (Feb 2022), I'm looking for my first job or internship
+                        and decided to turn my career around. As of now (May 2022), I'm looking for my first job
                         as a front-end developer.
+                    </p>
+                    <p>
+                        In March and April, I have completed an amazing internship at ElPassion, which allowed me to learn not only how to code, but how to work as a coder (teamwork, git, tests, time estimates, remote work).
+                        Besides, my education includes courses focused on JavaScript and Node.js
+                        (<Link href="https://www.incopolska.org/incode">INCODE</Link>)
+                        or React.js (<Link href="https://szkolareacta.pl/zapisy/">React School</Link> (PL))
+                        and countless hours spent tinkering with my own projects.
                     </p>
                     <p>
                         My education includes courses focused on JavaScript and Node.js
@@ -33,7 +40,7 @@ const About = () => {
                         and countless hours spent tinkering with my own projects.
                     </p>
                     <p>
-                        I'm currently participating in <Link href="https://challenges.dareit.io/">Dare IT: Portfolio Challenge</Link> programme and eagerly learning TypeScript.<br />
+                        I've been recently participating in <Link href="https://challenges.dareit.io/">Dare IT: Portfolio Challenge</Link> programme and eagerly learning TypeScript.<br />
                     </p>
                     <p>
                         Web development will be a new path in my career life - up till now, I've worked as a Polish translator with English
