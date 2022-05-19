@@ -9,7 +9,7 @@ const Projects = () => {
     const renderProjects = () => {
         return projects.map(project => {
             return (
-                <Grid item xs={12} sm={10} md={6} lg={4}>
+                <Grid key={project.id} item xs={12} sm={10} md={6} lg={4}>
                     <Project data={project} />
                 </Grid>
             )
@@ -18,7 +18,7 @@ const Projects = () => {
 
     return (
         <Grid container sx={{ justifyContent: 'center' }} spacing={3}>
-            <Grid item xs={12} sm={10} md={6} lg={12}>
+            <Grid item xs={12} sm={10} md={12}>
                 <LastProject />
             </Grid>
             {renderProjects()}

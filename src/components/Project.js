@@ -4,7 +4,7 @@ import { Button, Card, CardContent, CardHeader } from '@mui/material';
 
 const Project = ({ data }) => {
     return (
-        <Card sx={{ minWidth: 270, p: 0, display: 'flex', flexWrap: 'wrap', minHeight: {xs: 0, md: '23.5rem', lg: 'unset' }}}>
+        <Card sx={{ width: "100%", height: "100%", p: 0, display: 'flex', flexWrap: 'wrap', minHeight: {xs: 0, md: '23.5rem', lg: 'unset' }}}>
             <CardHeader
                 sx={{ ml: 1, pb: 0, pl: 2 }}
                 title={data.name}
