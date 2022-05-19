@@ -10,6 +10,7 @@ const lastProject = {
 
 const projects = [
   {
+    id: "1",
     name: "Bike, run, swim",
     technologies: [
       "TypeScript",
@@ -25,8 +26,9 @@ const projects = [
     label: "recent project",
   },
   {
+    id: "2",
     name: "Game of life",
-    technologies: ["TypeScript", "Next.js", "Jest (TDD)", "npm", 'Tailwind'],
+    technologies: ["TypeScript", "Next.js", "Jest (TDD)", "npm", "Tailwind"],
     description:
       "Visualization of Conway's Game of Life algorithm. A pair project using monorepo.",
     demo: "game-of-life-vis.herokuapp.com",
@@ -34,6 +36,7 @@ const projects = [
     label: "recent project",
   },
   {
+    id: "3",
     name: "Rick and Morty",
     technologies: ["TypeScript", "Next.js", "react-query", "Tailwind"],
     description:
@@ -43,6 +46,7 @@ const projects = [
     label: "recent project",
   },
   {
+    id: "4",
     name: "Shift planner",
     technologies: ["Node.js (Express)", "EJS", "PostgreSQL", "Bootstrap"],
     description:
@@ -52,6 +56,7 @@ const projects = [
     label: "older project",
   },
   {
+    id: "5",
     name: "Calculator",
     technologies: ["JavaScript (ES6)", "Jest", "webpack", "babel", "ESLint"],
     description:
@@ -61,6 +66,7 @@ const projects = [
     label: "older project",
   },
   {
+    id: "6",
     name: "Accordion FAQ",
     technologies: ["TypeScript", "React", "styled-components"],
     description:
