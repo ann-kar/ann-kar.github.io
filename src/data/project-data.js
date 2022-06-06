@@ -29,9 +29,18 @@ const projects = [
     code: "https://github.com/ann-kar/monorepo-game-of-life",
     label: "recent project",
   },
-
   {
     id: "3",
+    name: "Accordion FAQ",
+    technologies: ["TypeScript", "React", "styled-components"],
+    description:
+      "A small project intended as an exercise in styled-components and TypeScript, based on a Figma design. A responsive landing page displaying FAQ and an SVG graphic.",
+    demo: "https://ann-kar.github.io/accordion-faq/",
+    code: "https://github.com/ann-kar/accordion-faq/",
+    label: "small project",
+  },
+  {
+    id: "4",
     name: "Bike, run, swim",
     technologies: [
       "TypeScript",
@@ -42,19 +51,8 @@ const projects = [
     ],
     description:
       "A training app for triathlonists. Allows to add workouts, display them as a list, and edit data.",
-    demo: "https://bike-run-swim.herokuapp.com",
     code: "https://github.com/ann-kar/bikerunswim",
     label: "recent project",
-  },
-  {
-    id: "4",
-    name: "Accordion FAQ",
-    technologies: ["TypeScript", "React", "styled-components"],
-    description:
-      "A small project intended as an exercise in styled-components and TypeScript, based on a Figma design. A responsive landing page displaying FAQ and an SVG graphic.",
-    demo: "https://ann-kar.github.io/accordion-faq/",
-    code: "https://github.com/ann-kar/accordion-faq/",
-    label: "small project",
   },
   {
     id: "5",
