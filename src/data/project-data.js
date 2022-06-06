@@ -21,8 +21,8 @@ const projects = [
     ],
     description:
       "A training app for triathlonists. Allows to add workouts, display them as a list, and edit data.",
-    demo: "bike-run-swim.herokuapp.com",
-    code: "github.com/ann-kar/bikerunswim",
+    demo: "https://bike-run-swim.herokuapp.com",
+    code: "https://github.com/ann-kar/bikerunswim",
     label: "recent project",
   },
   {
@@ -31,8 +31,8 @@ const projects = [
     technologies: ["TypeScript", "Next.js", "Jest (TDD)", "npm", "Tailwind"],
     description:
       "Visualization of Conway's Game of Life algorithm. A pair project using monorepo.",
-    demo: "game-of-life-vis.herokuapp.com",
-    code: "github.com/ann-kar/monorepo-game-of-life",
+    demo: "https://game-of-life-vis.herokuapp.com",
+    code: "https://github.com/ann-kar/monorepo-game-of-life",
     label: "recent project",
   },
   {
@@ -41,7 +41,7 @@ const projects = [
     technologies: ["TypeScript", "Next.js", "react-query", "Tailwind"],
     description:
       "A tribute to the Rick and Morty show - an app for searching specific characters by name or other parameters.",
-    demo: "rick-morty-dun.vercel.app",
+    demo: "https://rick-morty-dun.vercel.app",
     code: "https://github.com/ann-kar/rick-morty",
     label: "recent project",
   },
